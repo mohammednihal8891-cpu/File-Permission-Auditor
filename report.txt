@@ -1,0 +1,35 @@
+FILE PERMISSION AUDIT REPORT
+====================================
+Directory: test
+Date: Mon Oct  5 06:37:38 AM IST 2026
+====================================
+
+[MEDIUM RISK]
+File  : test/normal.txt
+Owner : kali
+Group : kali
+Perm  : -rw-rw-r--
+Reason: Other users have write permission
+
+[MEDIUM RISK]
+File  : test/.secret
+Type  : Hidden File
+Owner : kali
+Group : kali
+Perm  : -rw-r--r--
+Reason: Other users have write permission
+
+[MEDIUM RISK]
+File  : test/dangerous.txt
+Owner : kali
+Group : kali
+Perm  : -rw-r--r--
+Reason: Other users have write permission
+
+====================================
+SCAN COMPLETED
+High Risk Issues   : 0
+Medium Risk Issues : 3
+Safe Files         : 0
+Total Issues       : 3
+Report saved as: report.txt
